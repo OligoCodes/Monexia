@@ -13,6 +13,7 @@ body{
   background-size: cover;
   background-position: center;
   position: relative;
+  scroll-behaviour: unset;
 }
 
 header{
@@ -60,6 +61,10 @@ header{
 
 .bind1 input:focus{
   outline : solid 2px blue;
+}
+
+.bind #from{
+  font-weight: 700;
 }
 
 .bind2{
