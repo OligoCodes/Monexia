@@ -1,0 +1,391 @@
+*{
+  font-family: Montserrat;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(icons/body.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 20px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+
+#logo{
+  border-radius: 50%;
+  animation: splan 1ms infinite 4s;
+}
+
+/*@keyframes splan{
+  0%{
+    transform: rotateY(720deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+}*/
+
+
+.bind1{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.bind1 input{
+  padding: 8px;
+  border-radius: 15px;
+  height: 35px;
+  width: 265px;
+  border: 0;
+  box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bind1 input:focus{
+  outline : solid 2px blue;
+}
+
+.bind2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #868686;
+  height: 55px;
+  width: 330px;
+  border-radius: 18px;
+  background: #E0E0E0;
+  border: solid 1px black;
+}
+
+
+.convertedAmount{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+#to{
+  font-weight: 700;
+}
+
+.spawn{
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#text{
+  background: linear-gradient(135deg, #0FB5FF, #068EA5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.engine {
+  position: fixed;
+  width: 88%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  z-index: 1000;
+  animation: appear 3s ease 1;
+}
+
+@keyframes appear{
+  0%{
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+.dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.7;
+    margin: 5px;
+    background: #108AF9;
+    animation: dotPulse 1.8s ease-in-out infinite;
+}
+
+.dot:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(2){
+   animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+   animation-delay: 0.4s;
+}
+
+@keyframes dotPulse{
+    0%{
+        transform: translateY(0);
+    }
+    28%{
+        opacity: 0.4;
+        transform: translateY(-4px);
+    }
+    44%{
+        opacity: 0.2;
+        transform: translateY(0);
+    }
+}
+
+
+
+.inputOutput{
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+}
+
+
+.fromTo {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 12px;
+}
+
+#vertFrom, #vertTo{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.dropdownArea{
+  position: relative;
+  flex: 1;
+}
+
+
+.dropdownArea label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+  box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#special{
+  box-shadow: -5px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown input{
+  border-radius: 20px;
+}
+
+#input1, #input2 {
+  width: auto;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#input1:focus, #input2:focus{
+  outline: solid 1px #108AF9;
+}
+
+.dropdown #input1:placeholder, .dropdown #input2:placeholder
+{
+  font-weight: 900;
+}
+
+.FromSelect, .ToSelect{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 700;
+}
+
+.options {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: solid 0.5px blue;
+}
+
+
+.option:hover {
+  background: #e0e0e0;
+}
+
+
+.selectedOne, .selectedTwo{
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f0f0f0;
+  user-select: none;
+}
+
+.press{
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.press button{
+  width: 250px;
+  font-weight: 900;
+  color: white;
+  font-size: 18px;
+  background: #108AF9;
+  box-shadow : 0px 0px 10px rgba(0 , 100, 255, 1);
+  box-shadow: 0 0 3px black;
+  border: none;
+  border-radius: 10px;
+}
+
+.press button:hover{
+  background: #053C6E;
+  scale: 0.95;
+}
+
+.essentials{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.swapButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swapButton button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #108AF9;
+  background: #FDFF0A;
+  animation: roll 1s 1 ease;
+  box-shadow: 0px 0px 5px rgba(255, 255, 0, 1);
+}
+
+.swapButton button:hover{
+transition: all 0.6s ease;
+transform: rotateZ(180deg);
+}
+
+.exchangeRate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rateValue{
+   display: flex;
+   justify-content: center;
+   align-items: center ;
+   border: solid 1px black;
+   border-style: dashed;
+   border-radius: 20px;
+   height: 80px;
+   width: 220px;
+   background : #BABABA;
+   backdrop-filter: blur(56px);
+   padding: 2px;
+}
+
+#ratedesign{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #00FFF4, #FF0053);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.lastUpdate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.updateValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    height: 23px;
+    width: auto;
+    color: #760000;
+}
+
+.credits{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#copy{
+  position: fixed;
+  font-weight: 800;
+  color: rgba(10 , 26, 47, 0.5);
+  font-size: 16px;
+}
+
+.offButton{
+  margin-top: 20px;
+}
+
+
