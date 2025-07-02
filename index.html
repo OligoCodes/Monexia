@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Simple Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="engine">
+    <header>
+      <img id="logo" height="50px" width="50px" src="icons/mylogo.jpg" alt="oligo">
+      <h2 id="head">Currency Converter</h2>
+    </header>
+    
+    <div class="inputOutput">
+      
+       <div class="bind1">
+          <label id="from">Amount: </label>
+          <input type="number" id="amount" placeholder="Enter amount" /><br><br>
+       </div>
+       
+       <div class="bind2">
+          <label id="to">Converted Amount:</label>
+          <div class="convertedAmount">
+          </div>
+       </div>
+       
+    </div><br>
+
+    <div class="fromTo">
+  <!--from-->
+      <div class="from">
+        
+       <div class="dropdownArea">
+         
+         <label id="vertFrom">From:</label><br>
+         <div class="FromSelect">
+           
+            <div class="selectedOne">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
+</svg></div>
+            <div class="dropdown" style="display:none">
+              
+               <input placeholder="₵ Search Currency" id="input1">
+               <div class="options">
+                <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
+<div class="option">🇦🇫 AFN - Afghan Afghani</div>
+<div class="option">🇦🇱 ALL - Albanian Lek</div>
+<div class="option">🇦🇲 AMD - Armenian Dram</div>
+<div class="option">🇳🇱 ANG - Netherlands Antillean Guilder</div>
+<div class="option">🇦🇴 AOA - Angolan Kwanza</div>
+<div class="option">🇦🇷 ARS - Argentine Peso</div>
+<div class="option">🇦🇺 AUD - Australian Dollar</div>
+<div class="option">🇦🇼 AWG - Aruban Florin</div>
+<div class="option">🇦🇿 AZN - Azerbaijani Manat</div>
+<div class="option">🇧🇦 BAM - Bosnia and Herzegovina Convertible Mark</div>
+<div class="option">🇧🇧 BBD - Barbadian Dollar</div>
+<div class="option">🇧🇩 BDT - Bangladeshi Taka</div>
+<div class="option">🇧🇬 BGN - Bulgarian Lev</div>
+<div class="option">🇧🇭 BHD - Bahraini Dinar</div>
+<div class="option">🇧🇮 BIF - Burundian Franc</div>
+<div class="option">🇧🇲 BMD - Bermudian Dollar</div>
+<div class="option">🇧🇳 BND - Brunei Dollar</div>
+<div class="option">🇧🇴 BOB - Bolivian Boliviano</div>
+<div class="option">🇧🇷 BRL - Brazilian Real</div>
+<div class="option">🇧🇸 BSD - Bahamian Dollar</div>
+<div class="option">💰 BTC - Bitcoin</div>
+<div class="option">🇧🇹 BTN - Bhutanese Ngultrum</div>
+<div class="option">🇧🇼 BWP - Botswana Pula</div>
+<div class="option">🇧🇾 BYN - Belarusian Ruble</div>
+<div class="option">🇧🇿 BZD - Belize Dollar</div>
+<div class="option">🇨🇦 CAD - Canadian Dollar</div>
+<div class="option">🇨🇩 CDF - Congolese Franc (DR Congo)</div>
+<div class="option">🇨🇭 CHF - Swiss Franc</div>
+<div class="option">🇨🇱 CLP - Chilean Peso</div>
+<div class="option">🇨🇳 CNY - Chinese Yuan Renminbi</div>
+<div class="option">🇨🇴 COP - Colombian Peso</div>
+<div class="option">🇨🇷 CRC - Costa Rican Colón</div>
+<div class="option">🇨🇺 CUP - Cuban Peso</div>
+<div class="option">🇨🇻 CVE - Cape Verde Escudo</div>
+<div class="option">🇨🇿 CZK - Czech Koruna</div>
+<div class="option">🇩🇯 DJF - Djiboutian Franc</div>
+<div class="option">🇩🇰 DKK - Danish Krone</div>
+<div class="option">🇩🇴 DOP - Dominican Peso</div>
+<div class="option">🇩🇿 DZD - Algerian Dinar</div>
+<div class="option">🇪🇬 EGP - Egyptian Pound</div>
+<div class="option">🇪🇷 ERN - Eritrean Nakfa</div>
+<div class="option">🇪🇹 ETB - Ethiopian Birr</div>
+<div class="option">🇪🇺 EUR - Euro (European Union)</div>
+<div class="option">🇫🇯 FJD - Fijian Dollar</div>
+<div class="option">🇫🇰 FKP - Falkland Islands Pound</div>
+<div class="option">🇬🇧 GBP - British Pound Sterling</div>
+<div class="option">🇬🇪 GEL - Georgian Lari</div>
+<div class="option">🇬🇬 GGP - Guernsey Pound</div>
+<div class="option">🇬🇭 GHS - Ghanaian Cedi</div>
+<div class="option">🇬🇮 GIP - Gibraltar Pound</div>
+<div class="option">🇬🇲 GMD - Gambian Dalasi</div>
+<div class="option">🇬🇳 GNF - Guinean Franc</div>
+<div class="option">🇬🇹 GTQ - Guatemalan Quetzal</div>
+<div class="option">🇬🇾 GYD - Guyanese Dollar</div>
+<div class="option">🇭🇰 HKD - Hong Kong Dollar</div>
+<div class="option">🇭🇳 HNL - Honduran Lempira</div>
+<div class="option">🇭🇷 HRK - Croatian Kuna</div>
+<div class="option">🇭🇹 HTG - Haitian Gourde</div>
+<div class="option">🇭🇺 HUF - Hungarian Forint</div>
+<div class="option">🇮🇩 IDR - Indonesian Rupiah</div>
+<div class="option">🇮🇱 ILS - Israeli New Shekel</div>
+<div class="option">🇮🇳 INR - Indian Rupee</div>
+<div class="option">🇮🇶 IQD - Iraqi Dinar</div>
+<div class="option">🇮🇷 IRR - Iranian Rial</div>
+<div class="option">🇮🇸 ISK - Icelandic Króna</div>
+<div class="option">🇯🇲 JMD - Jamaican Dollar</div>
+<div class="option">🇯🇴 JOD - Jordanian Dinar</div>
+<div class="option">🇯🇵 JPY - Japanese Yen</div>
+<div class="option">🇰🇪 KES - Kenyan Shilling</div>
+<div class="option">🇰🇬 KGS - Kyrgyzstani Som</div>
+<div class="option">🇰🇭 KHR - Cambodian Riel</div>
+<div class="option">🇰🇲 KMF - Comorian Franc</div>
+<div class="option">🇰🇵 KPW - North Korean Won</div>
+<div class="option">🇰🇷 KRW - South Korean Won</div>
+<div class="option">🇰🇼 KWD - Kuwaiti Dinar</div>
+<div class="option">🇰🇾 KYD - Cayman Islands Dollar</div>
+<div class="option">🇰🇿 KZT - Kazakhstani Tenge</div>
+<div class="option">🇱🇰 LKR - Sri Lankan Rupee</div>
+<div class="option">🇱🇧 LBP - Lebanese Pound</div>
+<div class="option">🇱🇷 LRD - Liberian Dollar</div>
+<div class="option">🇱🇸 LSL - Lesotho Loti</div>
+<div class="option">🇱🇾 LYD - Libyan Dinar</div>
+<div class="option">🇲🇩 MDL - Moldovan Leu</div>
+<div class="option">🇲🇬 MGA - Malagasy Ariary</div>
+<div class="option">🇲🇰 MKD - Macedonian Denar</div>
+<div class="option">🇲🇲 MMK - Myanmar Kyat</div>
+<div class="option">🇲🇳 MNT - Mongolian Tögrög</div>
+<div class="option">🇲🇺 MUR - Mauritian Rupee</div>
+<div class="option">🇲🇼 MWK - Malawian Kwacha</div>
+<div class="option">🇲🇽 MXN - Mexican Peso</div>
+<div class="option">🇲🇾 MYR - Malaysian Ringgit</div>
+<div class="option">🇲🇿 MZN - Mozambican Metical</div>
+<div class="option">🇳🇦 NAD - Namibian Dollar</div>
+<div class="option">🇳🇬 NGN - Nigerian Naira</div>
+<div class="option">🇳🇮 NIO - Nicaraguan Córdoba</div>
+<div class="option">🇳🇴 NOK - Norwegian Krone</div>
+<div class="option">🇳🇵 NPR - Nepalese Rupee</div>
+<div class="option">🇳🇿 NZD - New Zealand Dollar</div>
+<div class="option">🇴🇲 OMR - Omani Rial</div>
+<div class="option">🇵🇭 PHP - Philippine Peso</div>
+<div class="option">🇵🇰 PKR - Pakistani Rupee</div>
+<div class="option">🇵🇱 PLN - Polish Złoty</div>
+<div class="option">🇵🇾 PYG - Paraguayan Guaraní</div>
+<div class="option">🇶🇦 QAR - Qatari Riyal</div>
+<div class="option">🇷🇴 RON - Romanian Leu</div>
+<div class="option">🇷🇸 RSD - Serbian Dinar</div>
+<div class="option">🇷🇺 RUB - Russian Ruble</div>
+<div class="option">🇷🇼 RWF - Rwandan Franc</div>
+<div class="option">🇸🇦 SAR - Saudi Riyal</div>
+<div class="option">🇸🇩 SDG - Sudanese Pound</div>
+<div class="option">🇸🇬 SGD - Singapore Dollar</div>
+<div class="option">🇸🇭 SHP - Saint Helena Pound</div>
+<div class="option">🇸🇱 SLL - Sierra Leonean Leone</div>
+<div class="option">🇸🇴 SOS - Somali Shilling</div>
+<div class="option">🇸🇷 SRD - Surinam Dollar</div>
+<div class="option">🇸🇸 SSP - South Sudanese Pound</div>
+<div class="option">🇸🇹 STN - São Tomé and Príncipe Dobra</div>
+<div class="option">🇸🇻 SVC - Salvadoran Colón</div>
+<div class="option">🇸🇾 SYP - Syrian Pound</div>
+<div class="option">🇸🇿 SZL - Swazi Lilangeni</div>
+<div class="option">🇹🇭 THB - Thai Baht</div>
+<div class="option">🇹🇯 TJS - Tajikistani Somoni</div>
+<div class="option">🇹🇲 TMT - Turkmenistani Manat</div>
+<div class="option">🇹🇳 TND - Tunisian Dinar</div>
+<div class="option">🇹🇴 TOP - Tongan Paʻanga</div>
+<div class="option">🇹🇷 TRY - Turkish Lira</div>
+<div class="option">🇹🇹 TTD - Trinidad and Tobago Dollar</div>
+<div class="option">🇹🇼 TWD - New Taiwan Dollar</div>
+<div class="option">🇹🇿 TZS - Tanzanian Shilling</div>
+<div class="option">🇺🇦 UAH - Ukrainian Hryvnia</div>
+<div class="option">🇺🇬 UGX - Ugandan Shilling</div>
+<div class="option">🇺🇸 USD - United States Dollar</div>
+<div class="option">🇺🇾 UYU - Uruguayan Peso</div>
+<div class="option">🇺🇿 UZS - Uzbekistani Som</div>
+<div class="option">🇻🇪 VES - Venezuelan Bolívar Soberano</div>
+<div class="option">🇻🇳 VND - Vietnamese Dong</div>
+<div class="option">🇻🇺 VUV - Vanuatu Vatu</div>
+<div class="option">🇼🇸 WST - Samoan Tala</div>
+<div class="option">🇽🇫 XAF - Central African CFA Franc</div>
+<div class="option">🇽🇭 XAG - Silver (troy ounce)</div>
+<div class="option">🇽🇦 XAU - Gold (troy ounce)</div>
+<div class="option">🇽🇩 XDR - IMF Special Drawing Rights</div>
+<div class="option">🇽🇴 XOF - West African CFA Franc</div>
+<div class="option">🇽🇫 XPD - Palladium (troy ounce)</div>
+<div class="option">🇭🇵 XPF - CFP Franc</div>
+<div class="option">🇭🇵 XPT - Platinum (troy ounce)</div>
+<div class="option">🇾🇪 YER - Yemeni Rial</div>
+<div class="option">🇿🇦 ZAR - South African Rand</div>
+<div class="option">🇿🇲 ZMW - Zambian Kwacha</div>
+<div class="option">🇿🇼 ZWL - Zimbabwe Dollar</div>
+              </div>
+               
+            </div>
+            
+         </div>
+         
+       </div>
+       
+      </div>
+      
+  <!--To--> 
+      <div class="to">
+        
+        <div class="dropdownArea">
+          
+         <label id="vertTo">To:</label><br>
+         <div class="ToSelect">
+           
+            <div class="selectedTwo">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="20px" height="20px" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
+</svg></div>
+            <div id="special" class="dropdown" style="display:none">
+              
+               <input placeholder="₵ Search Currency" id="input2">
+               <div class="options">
+                 <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
+<div class="option">🇦🇫 AFN - Afghan Afghani</div>
+<div class="option">🇦🇱 ALL - Albanian Lek</div>
+<div class="option">🇦🇲 AMD - Armenian Dram</div>
+<div class="option">🇳🇱 ANG - Netherlands Antillean Guilder</div>
+<div class="option">🇦🇴 AOA - Angolan Kwanza</div>
+<div class="option">🇦🇷 ARS - Argentine Peso</div>
+<div class="option">🇦🇺 AUD - Australian Dollar</div>
+<div class="option">🇦🇼 AWG - Aruban Florin</div>
+<div class="option">🇦🇿 AZN - Azerbaijani Manat</div>
+<div class="option">🇧🇦 BAM - Bosnia and Herzegovina Convertible Mark</div>
+<div class="option">🇧🇧 BBD - Barbadian Dollar</div>
+<div class="option">🇧🇩 BDT - Bangladeshi Taka</div>
+<div class="option">🇧🇬 BGN - Bulgarian Lev</div>
+<div class="option">🇧🇭 BHD - Bahraini Dinar</div>
+<div class="option">🇧🇮 BIF - Burundian Franc</div>
+<div class="option">🇧🇲 BMD - Bermudian Dollar</div>
+<div class="option">🇧🇳 BND - Brunei Dollar</div>
+<div class="option">🇧🇴 BOB - Bolivian Boliviano</div>
+<div class="option">🇧🇷 BRL - Brazilian Real</div>
+<div class="option">🇧🇸 BSD - Bahamian Dollar</div>
+<div class="option">💰 BTC - Bitcoin</div>
+<div class="option">🇧🇹 BTN - Bhutanese Ngultrum</div>
+<div class="option">🇧🇼 BWP - Botswana Pula</div>
+<div class="option">🇧🇾 BYN - Belarusian Ruble</div>
+<div class="option">🇧🇿 BZD - Belize Dollar</div>
+<div class="option">🇨🇦 CAD - Canadian Dollar</div>
+<div class="option">🇨🇩 CDF - Congolese Franc (DR Congo)</div>
+<div class="option">🇨🇭 CHF - Swiss Franc</div>
+<div class="option">🇨🇱 CLP - Chilean Peso</div>
+<div class="option">🇨🇳 CNY - Chinese Yuan Renminbi</div>
+<div class="option">🇨🇴 COP - Colombian Peso</div>
+<div class="option">🇨🇷 CRC - Costa Rican Colón</div>
+<div class="option">🇨🇺 CUP - Cuban Peso</div>
+<div class="option">🇨🇻 CVE - Cape Verde Escudo</div>
+<div class="option">🇨🇿 CZK - Czech Koruna</div>
+<div class="option">🇩🇯 DJF - Djiboutian Franc</div>
+<div class="option">🇩🇰 DKK - Danish Krone</div>
+<div class="option">🇩🇴 DOP - Dominican Peso</div>
+<div class="option">🇩🇿 DZD - Algerian Dinar</div>
+<div class="option">🇪🇬 EGP - Egyptian Pound</div>
+<div class="option">🇪🇷 ERN - Eritrean Nakfa</div>
+<div class="option">🇪🇹 ETB - Ethiopian Birr</div>
+<div class="option">🇪🇺 EUR - Euro (European Union)</div>
+<div class="option">🇫🇯 FJD - Fijian Dollar</div>
+<div class="option">🇫🇰 FKP - Falkland Islands Pound</div>
+<div class="option">🇬🇧 GBP - British Pound Sterling</div>
+<div class="option">🇬🇪 GEL - Georgian Lari</div>
+<div class="option">🇬🇬 GGP - Guernsey Pound</div>
+<div class="option">🇬🇭 GHS - Ghanaian Cedi</div>
+<div class="option">🇬🇮 GIP - Gibraltar Pound</div>
+<div class="option">🇬🇲 GMD - Gambian Dalasi</div>
+<div class="option">🇬🇳 GNF - Guinean Franc</div>
+<div class="option">🇬🇹 GTQ - Guatemalan Quetzal</div>
+<div class="option">🇬🇾 GYD - Guyanese Dollar</div>
+<div class="option">🇭🇰 HKD - Hong Kong Dollar</div>
+<div class="option">🇭🇳 HNL - Honduran Lempira</div>
+<div class="option">🇭🇷 HRK - Croatian Kuna</div>
+<div class="option">🇭🇹 HTG - Haitian Gourde</div>
+<div class="option">🇭🇺 HUF - Hungarian Forint</div>
+<div class="option">🇮🇩 IDR - Indonesian Rupiah</div>
+<div class="option">🇮🇱 ILS - Israeli New Shekel</div>
+<div class="option">🇮🇳 INR - Indian Rupee</div>
+<div class="option">🇮🇶 IQD - Iraqi Dinar</div>
+<div class="option">🇮🇷 IRR - Iranian Rial</div>
+<div class="option">🇮🇸 ISK - Icelandic Króna</div>
+<div class="option">🇯🇲 JMD - Jamaican Dollar</div>
+<div class="option">🇯🇴 JOD - Jordanian Dinar</div>
+<div class="option">🇯🇵 JPY - Japanese Yen</div>
+<div class="option">🇰🇪 KES - Kenyan Shilling</div>
+<div class="option">🇰🇬 KGS - Kyrgyzstani Som</div>
+<div class="option">🇰🇭 KHR - Cambodian Riel</div>
+<div class="option">🇰🇲 KMF - Comorian Franc</div>
+<div class="option">🇰🇵 KPW - North Korean Won</div>
+<div class="option">🇰🇷 KRW - South Korean Won</div>
+<div class="option">🇰🇼 KWD - Kuwaiti Dinar</div>
+<div class="option">🇰🇾 KYD - Cayman Islands Dollar</div>
+<div class="option">🇰🇿 KZT - Kazakhstani Tenge</div>
+<div class="option">🇱🇰 LKR - Sri Lankan Rupee</div>
+<div class="option">🇱🇧 LBP - Lebanese Pound</div>
+<div class="option">🇱🇷 LRD - Liberian Dollar</div>
+<div class="option">🇱🇸 LSL - Lesotho Loti</div>
+<div class="option">🇱🇾 LYD - Libyan Dinar</div>
+<div class="option">🇲🇩 MDL - Moldovan Leu</div>
+<div class="option">🇲🇬 MGA - Malagasy Ariary</div>
+<div class="option">🇲🇰 MKD - Macedonian Denar</div>
+<div class="option">🇲🇲 MMK - Myanmar Kyat</div>
+<div class="option">🇲🇳 MNT - Mongolian Tögrög</div>
+<div class="option">🇲🇺 MUR - Mauritian Rupee</div>
+<div class="option">🇲🇼 MWK - Malawian Kwacha</div>
+<div class="option">🇲🇽 MXN - Mexican Peso</div>
+<div class="option">🇲🇾 MYR - Malaysian Ringgit</div>
+<div class="option">🇲🇿 MZN - Mozambican Metical</div>
+<div class="option">🇳🇦 NAD - Namibian Dollar</div>
+<div class="option">🇳🇬 NGN - Nigerian Naira</div>
+<div class="option">🇳🇮 NIO - Nicaraguan Córdoba</div>
+<div class="option">🇳🇴 NOK - Norwegian Krone</div>
+<div class="option">🇳🇵 NPR - Nepalese Rupee</div>
+<div class="option">🇳🇿 NZD - New Zealand Dollar</div>
+<div class="option">🇴🇲 OMR - Omani Rial</div>
+<div class="option">🇵🇭 PHP - Philippine Peso</div>
+<div class="option">🇵🇰 PKR - Pakistani Rupee</div>
+<div class="option">🇵🇱 PLN - Polish Złoty</div>
+<div class="option">🇵🇾 PYG - Paraguayan Guaraní</div>
+<div class="option">🇶🇦 QAR - Qatari Riyal</div>
+<div class="option">🇷🇴 RON - Romanian Leu</div>
+<div class="option">🇷🇸 RSD - Serbian Dinar</div>
+<div class="option">🇷🇺 RUB - Russian Ruble</div>
+<div class="option">🇷🇼 RWF - Rwandan Franc</div>
+<div class="option">🇸🇦 SAR - Saudi Riyal</div>
+<div class="option">🇸🇩 SDG - Sudanese Pound</div>
+<div class="option">🇸🇬 SGD - Singapore Dollar</div>
+<div class="option">🇸🇭 SHP - Saint Helena Pound</div>
+<div class="option">🇸🇱 SLL - Sierra Leonean Leone</div>
+<div class="option">🇸🇴 SOS - Somali Shilling</div>
+<div class="option">🇸🇷 SRD - Surinam Dollar</div>
+<div class="option">🇸🇸 SSP - South Sudanese Pound</div>
+<div class="option">🇸🇹 STN - São Tomé and Príncipe Dobra</div>
+<div class="option">🇸🇻 SVC - Salvadoran Colón</div>
+<div class="option">🇸🇾 SYP - Syrian Pound</div>
+<div class="option">🇸🇿 SZL - Swazi Lilangeni</div>
+<div class="option">🇹🇭 THB - Thai Baht</div>
+<div class="option">🇹🇯 TJS - Tajikistani Somoni</div>
+<div class="option">🇹🇲 TMT - Turkmenistani Manat</div>
+<div class="option">🇹🇳 TND - Tunisian Dinar</div>
+<div class="option">🇹🇴 TOP - Tongan Paʻanga</div>
+<div class="option">🇹🇷 TRY - Turkish Lira</div>
+<div class="option">🇹🇹 TTD - Trinidad and Tobago Dollar</div>
+<div class="option">🇹🇼 TWD - New Taiwan Dollar</div>
+<div class="option">🇹🇿 TZS - Tanzanian Shilling</div>
+<div class="option">🇺🇦 UAH - Ukrainian Hryvnia</div>
+<div class="option">🇺🇬 UGX - Ugandan Shilling</div>
+<div class="option">🇺🇸 USD - United States Dollar</div>
+<div class="option">🇺🇾 UYU - Uruguayan Peso</div>
+<div class="option">🇺🇿 UZS - Uzbekistani Som</div>
+<div class="option">🇻🇪 VES - Venezuelan Bolívar Soberano</div>
+<div class="option">🇻🇳 VND - Vietnamese Dong</div>
+<div class="option">🇻🇺 VUV - Vanuatu Vatu</div>
+<div class="option">🇼🇸 WST - Samoan Tala</div>
+<div class="option">🇽🇫 XAF - Central African CFA Franc</div>
+<div class="option">🇽🇭 XAG - Silver (troy ounce)</div>
+<div class="option">🇽🇦 XAU - Gold (troy ounce)</div>
+<div class="option">🇽🇩 XDR - IMF Special Drawing Rights</div>
+<div class="option">🇽🇴 XOF - West African CFA Franc</div>
+<div class="option">🇽🇫 XPD - Palladium (troy ounce)</div>
+<div class="option">🇭🇵 XPF - CFP Franc</div>
+<div class="option">🇭🇵 XPT - Platinum (troy ounce)</div>
+<div class="option">🇾🇪 YER - Yemeni Rial</div>
+<div class="option">🇿🇦 ZAR - South African Rand</div>
+<div class="option">🇿🇲 ZMW - Zambian Kwacha</div>
+<div class="option">🇿🇼 ZWL - Zimbabwe Dollar</div>
+               </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+  
+    </div><br>
+    
+    <div class="press">
+      <button id="convert">Convert</button>
+    </div>
+    
+    <div class="essentials">
+       <div class="swapButton"><button id="swapButton"><i style="font-size: 20px;font-weight: 700;" class="fa-solid fa-right-left"></i></button>
+       </div>
+       <div class="offButton">
+         <div class="exchangeRate">
+           <p>Rate:</p>
+           <div class="rateValue"></div>
+          </div>
+    
+         <div class="lastUpdate">
+           <p>Last Updated:</p>
+           <div class="updateValue"></div>
+         </div> 
+    
+         <div class="credits">
+          Developed by Joseph Bonsu 🇬🇭 , Powered by God.
+         </div>
+       </div>
+    </div>
+  </div>
+  
+  <p id="copy">
+    &copy; OligoTech | 2025-2125
+  </p>
+
+  <script src="main.js"></script>
+</body>
+</html>
