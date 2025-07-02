@@ -105,7 +105,7 @@ convert.onclick  = () => {
   
   let currency = selectedTwo.textContent.trim().replace(/^[^\w]*([A-Z]{3})\b.*$/, "$1");
   
-  fetch(`http://localhost:3000/latest/rates?base=${base}&currencies=${currency}`)
+  fetch(`https://monexia-backend.onrender.com/latest/rates?base=${base}&currencies=${currency}`)
   .then(res => {
     if (!res.ok) throw new Error(`Server responded with ${res.status}`);
     return res.json();
