@@ -108,8 +108,7 @@ header{
 }
 
 #text{
-  background: linear-gradient(135deg, #0FB5FF, #068EA5);
-  background-clip: text;
+  background: linear-gradient(135deg, #00B0FF, #0C5AFF);
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
@@ -360,7 +359,7 @@ transform: rotateZ(180deg);
   text-align: center;
   font-size: 18px;
   font-weight: 900;
-  background: linear-gradient(135deg, #00FFF4, #FF0053);
+  background: linear-gradient(135deg, #008DFF, #980CFF);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -376,7 +375,7 @@ transform: rotateZ(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     height: 23px;
     width: auto;
@@ -394,7 +393,7 @@ transform: rotateZ(180deg);
   position: fixed;
   font-weight: 800;
   color: rgba(10 , 26, 47, 0.5);
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .offButton{
