@@ -109,6 +109,7 @@ header{
 
 #text{
   background: linear-gradient(135deg, #00B0FF, #0C5AFF);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
