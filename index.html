@@ -4,58 +4,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Currency Converter</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://monexia.vercel.app/">
+    <meta property="og:title" content="Monexia — Global Rates, One Tap💱">
+    <meta property="og:description" content="Real-time currency swaps 💠. Fast. Simple. Everywhere ♻️.">
+    <meta property="og:image" content="https://i.postimg.cc/qMbbNFs5/file-00000000605861f99a17ca96d14083af.png">
+    <meta property="og:type" content="website">
+  
+  <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://monexia.vercel.app/">
+    <meta name="twitter:title" content="Monexia — Global Rates, One Tap💱">
+    <meta name="twitter:description" content="Real-time currency swaps 💠. Fast. Simple. Everywhere ♻️.">
+    <meta name="twitter:image" content="https://i.postimg.cc/qMbbNFs5/file-00000000605861f99a17ca96d14083af.png">
+
+
+    <title>Monexia — Global Rates, One Tap 💱</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <link rel="stylesheet" href="/style.css">
-   </head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
   
-  <div class="engine">
-    <header>
-      <img id="logo" height="50px" width="50px" src="/icons/mylogo.jpg" alt="oligo">
-      <h2 id="head">Currency Converter</h2>
-    </header>
+    <div class="engine">
+      <header>
+        <img id="logo" height="50px" width="50px" src="/icons/mylogo.jpg" alt="oligo">
+        <h2 id="head">Currency Converter</h2>
+      </header>
     
-    <div class="inputOutput">
+      <div class="inputOutput">
       
-       <div class="bind1">
-          <label id="from">Amount: </label>
-          <input type="number" id="amount" placeholder="Enter amount" /><br><br>
-       </div>
+         <div class="bind1">
+            <label id="from">Amount: </label>
+            <input type="number" id="amount" placeholder="Enter amount" /><br><br>
+         </div>
        
-       <div class="bind2">
-          <label id="to">Converted Amount:</label>
-          <div class="convertedAmount">
-          </div>
-       </div>
+         <div class="bind2">
+            <label id="to">Converted Amount:</label>
+            <div class="convertedAmount">
+            </div>
+         </div>
        
-    </div><br>
+      </div><br>
 
-    <div class="fromTo">
+      <div class="fromTo">
   <!--from-->
-      <div class="from">
+        <div class="from">
         
-       <div class="dropdownArea">
+         <div class="dropdownArea">
          
-         <label id="vertFrom">From:</label><br>
-         <div class="FromSelect">
+           <label id="vertFrom">From:</label><br>
+           <div class="FromSelect">
            
-            <div class="selectedOne">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
-</svg></div>
-            <div class="dropdown" style="display:none">
+              <div class="selectedOne">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+  <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
+  </svg></div>
+              <div class="dropdown" style="display:none">
               
-               <input placeholder="₵ Search Currency" id="input1">
-               <div class="options">
-                <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
+                 <input placeholder="₵ Search Currency" id="input1">
+                 <div class="options">
+                  <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
 <div class="option">🇦🇫 AFN - Afghan Afghani</div>
 <div class="option">🇦🇱 ALL - Albanian Lek</div>
 <div class="option">🇦🇲 AMD - Armenian Dram</div>
@@ -206,33 +220,33 @@
 <div class="option">🇿🇦 ZAR - South African Rand</div>
 <div class="option">🇿🇲 ZMW - Zambian Kwacha</div>
 <div class="option">🇿🇼 ZWL - Zimbabwe Dollar</div>
-              </div>
+                </div>
                
-            </div>
-            
-         </div>
+              </div>
+              
+           </div>
          
-       </div>
+         </div>
        
-      </div>
+        </div>
       
   <!--To--> 
-      <div class="to">
+        <div class="to">
         
-        <div class="dropdownArea">
+          <div class="dropdownArea">
           
-         <label id="vertTo">To:</label><br>
-         <div class="ToSelect">
+           <label id="vertTo">To:</label><br>
+           <div class="ToSelect">
            
-            <div class="selectedTwo">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="20px" height="20px" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
-</svg></div>
-            <div id="special" class="dropdown" style="display:none">
-              
-               <input placeholder="₵ Search Currency" id="input2">
-               <div class="options">
-                 <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
+              <div class="selectedTwo">Select Currency <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+  <svg width="20px" height="20px" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
+  </svg></div>
+              <div id="special" class="dropdown" style="display:none">
+               
+                 <input placeholder="₵ Search Currency" id="input2">
+                 <div class="options">
+                   <div class="option">🇦🇪 AED - United Arab Emirates Dirham</div>
 <div class="option">🇦🇫 AFN - Afghan Afghani</div>
 <div class="option">🇦🇱 ALL - Albanian Lek</div>
 <div class="option">🇦🇲 AMD - Armenian Dram</div>
@@ -383,46 +397,46 @@
 <div class="option">🇿🇦 ZAR - South African Rand</div>
 <div class="option">🇿🇲 ZMW - Zambian Kwacha</div>
 <div class="option">🇿🇼 ZWL - Zimbabwe Dollar</div>
-               </div>
-            </div>
+                 </div>
+              </div>
             
-          </div>
+            </div>
           
-        </div>
-        
-      </div>
-  
-    </div><br>
-    
-    <div class="press">
-      <button id="convert">Convert</button>
-    </div>
-    
-    <div class="essentials">
-       <div class="swapButton"><button id="swapButton"><i style="font-size: 20px;font-weight: 700;" class="fa-solid fa-right-left"></i></button>
-       </div>
-       <div class="offButton">
-         <div class="exchangeRate">
-           <p>Rate:</p>
-           <div class="rateValue"></div>
           </div>
-    
-         <div class="lastUpdate">
-           <p>Last Updated:</p>
-           <div class="updateValue"></div>
-         </div> 
-    
-         <div class="credits">
-          Developed by Joseph Bonsu 🇬🇭 , Powered by God.
-         </div>
-       </div>
-    </div>
-  </div>
+        
+        </div>
   
-  <p id="copy">
-    &copy; OligoTech | 2025-2125
-  </p>
+      </div><br>
+    
+      <div class="press">
+        <button id="convert">Convert</button>
+      </div>
+    
+      <div class="essentials">
+         <div class="swapButton"><button id="swapButton"><i style="font-size: 20px;font-weight: 700;" class="fa-solid fa-right-left"></i></button>
+         </div>
+         <div class="offButton">
+           <div class="exchangeRate">
+             <p>Rate:</p>
+             <div class="rateValue"></div>
+            </div>
+    
+           <div class="lastUpdate">
+             <p>Last Updated:</p>
+             <div class="updateValue"></div>
+           </div> 
+    
+           <div class="credits">
+            Developed by Joseph Bonsu 🇬🇭 , Powered by God.
+           </div>
+        </div>
+      </div>
+    </div>
+  
+    <p id="copy">
+      &copy; OligoTech | 2025-2125
+    </p>
 
-  <script src="/main.js"></script>
-</body>
+    <script src="/main.js"></script>
+  </body>
 </html>
