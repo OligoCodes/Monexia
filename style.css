@@ -390,6 +390,10 @@ transform: rotateZ(180deg);
   text-align: center;
 }
 
+#rate,#update{
+  font-weight: 800;
+}
+
 #copy{
   position: fixed;
   font-weight: 800;
