@@ -1,3 +1,4 @@
+alert("Thank you for using our Currency Converter. Due to high demand, conversions may take a little longer to process. Please be patient as our servers handle multiple requests. We appreciate your understanding.");
 const selectedOne = document.querySelector(".selectedOne");
 const selectedTwo = document.querySelector(".selectedTwo");
 
