@@ -150,4 +150,6 @@ convert.onclick  = () => {
   if (err.stack) console.error(err.stack);
 });
 };
-alert("Thank you for using our Currency Converter. Due to high demand, conversions may take a little longer to process. Please be patient as our servers handle multiple requests. We appreciate your understanding.");
+setTimeout(() => {
+  alert("Thank you for using our Currency Converter. Due to high demand, conversions may take a little longer to process. Please be patient as our servers handle multiple requests. We appreciate your understanding.");
+},3000)
