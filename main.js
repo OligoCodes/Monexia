@@ -120,7 +120,7 @@ convert.onclick  = () => {
     let minutes = date.getMinutes().toString();
     let seconds = date.getSeconds().toString();
     
-    updatePeriod = `Time: ${hours}hrs ${minutes}mins ${seconds} secs \nDate: ${data.date}`
+    updatePeriod = `Time: ${hours}hrs ${minutes}mins ${seconds} secs\nDate: ${data.date}`
     setTimeout(() => {
     updateValue.textContent = updatePeriod
     }, 4000)
