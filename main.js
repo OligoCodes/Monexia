@@ -142,7 +142,7 @@ convert.onclick  = () => {
      
      setTimeout(() => {
      amountDisplay.appendChild(datum);
-     }, 2000)
+     }, 3000)
        
      })
   .catch(err => {
