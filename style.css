@@ -33,6 +33,13 @@ header{
   animation: splan 1ms infinite 4s;
 }
 
+#head{
+  font-weight: 900;
+  background: linear-gradient(to left, #200EFF, #FF0D0D);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*@keyframes splan{
   0%{
     transform: rotateY(720deg);
@@ -63,9 +70,10 @@ header{
   outline : solid 2px blue;
 }
 
-.bind #from{
-  font-weight: 700;
+.bind1 #from{
+  font-weight: 800;
 }
+
 
 .bind2{
   display: flex;
